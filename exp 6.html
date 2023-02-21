@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+string and math object in js
+</title>
+</head>
+<body>
+<h1 id="string"></h1>
+<script>
+document.getElementById("string").innerHTML="String Objects in JS"
+var str="Hello,how are you."
+var str1=" I'm fine"
+document.write("Given string : ",str)
+x=str.length
+document.write("<br>","lenght of the string is ",x,"<br>")
+y=str.slice(1,13)
+document.write("Sliced part is : ",y,"<br>")
+z=str.toUpperCase()
+document.write("Given string in upper case =",z,"<br>")
+a=str.toLowerCase()
+document.write("Given string in  =",a,"<br>")
+b=str.charAt(4)
+document.write("Charector at the 5th index =",b,"<br>")
+c=str.match("Hello")
+document.write(c," is found on the string<br>")
+d=str.search("l")
+document.write("The letter l occurs ",d,"times<br>")
+e=str.split(" ")
+document.write("The string after splitting : ",e,"<br>")
+var str2=str.concat(str1)
+document.write("String  after concatination is :",str2,"<br>")
+</script>
+<h1 id="math"></h1>
+<script>
+document.getElementById("math").innerHTML="Math Objects in JS"
+x=Math.floor(4.5)
+document.write("Floor value of 4.5 is ",x,"<br>")
+y=Math.ceil(4.5)
+document.write("Ceil value of 4.5 is ",y,"<br>")
+a=Math.sqrt(25)
+document.write("Squareroot of 25=",a,"<br>")
+e=Math.pow(5,3)
+document.write("5 to the power of 3 =",e,"<br>")
+document.write("The given set is 2,4,1,9,7 <br>")
+b=Math.max(2,4,1,9,7)
+document.write("Max value of the given set is ",b,"<br>")
+c=Math.min(2,4,1,9,7)
+document.write("Max value of the given set is ",c,"<br>")
+</script>
+</body>
+</html>
